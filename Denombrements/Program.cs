@@ -34,12 +34,13 @@ namespace Denombrements
                 }
                 else
                 {
+                    Console.Write("nombre total d'éléments à gérer = "); // le nombre d'éléments à gérer
+                    int t = int.Parse(Console.ReadLine()); // saisir le nombre
+                    Console.Write("nombre d'éléments dans le sous ensemble = "); // le sous ensemble
+                    int n = int.Parse(Console.ReadLine()); // saisir le nombre
+
                     if (c == 2)
-                    {
-                        Console.Write("nombre total d'éléments à gérer = "); // le nombre d'éléments à gérer
-                        int t = int.Parse(Console.ReadLine()); // saisir le nombre
-                        Console.Write("nombre d'éléments dans le sous ensemble = "); // le sous ensemble
-                        int n = int.Parse(Console.ReadLine()); // saisir le nombre
+                    {                       
                         // calcul de r
                         long r = 1;
                         for (int k = (t - n + 1); k <= t; k++)
@@ -48,11 +49,7 @@ namespace Denombrements
                         Console.WriteLine("A(" + t + "/" + n + ") = " + r);
                     }
                     else
-                    {
-                        Console.Write("nombre total d'éléments à gérer = "); // le nombre d'éléments à gérer
-                        int t = int.Parse(Console.ReadLine()); // saisir le nombre
-                        Console.Write("nombre d'éléments dans le sous ensemble = "); // le sous ensemble
-                        int n = int.Parse(Console.ReadLine()); // saisir le nombre
+                    {                      
                         // calcul de r1
                         long r1 = 1;
                         for (int k = (t - n + 1); k <= t; k++)
